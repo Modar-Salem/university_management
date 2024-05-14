@@ -39,7 +39,13 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
-        ],
+        ],'lecturer' => [
+            'driver' => 'session' ,
+            'provider' => 'lecturers',
+        ],'student' => [
+            'driver' => 'session' ,
+            'provider' => 'students',
+        ]
     ],
 
     /*
@@ -63,12 +69,13 @@ return [
         'users' => [
             'driver' => 'eloquent',
             'model' => App\Models\User::class,
+        ],'lecturers' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Lecturer::class,
+        ],'students' => [
+            'driver' => 'eloquent',
+            'model' => App\Models\Student::class,
         ],
-
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
     ],
 
     /*

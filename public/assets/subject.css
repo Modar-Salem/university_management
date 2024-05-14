@@ -1,0 +1,13 @@
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+background-color: darkgray;
+color:white !important;
+} 
+.table-striped>tbody>tr:nth-of-type(odd) a {
+    background-color: darkgray;
+    color:white !important;
+    } 
+.table-striped>tbody>tr:nth-of-type(even) a {
+        background-color: darkgray;
+        color:rgb(14, 13, 13) !important;
+        } 
+        

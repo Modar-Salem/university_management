@@ -1,0 +1,16 @@
+.form-control {
+    display: block;
+    width: 60%;}
+
+.color-bg{
+    background-color: hsl(180deg 31.91% 90.78%);
+    opacity: .8;
+
+    }
+    
+.color-bg-input{
+    background-color: white;
+}
+/* .btn-coloor{
+    background-color: hsl(182.25deg 33.06% 52.55%);
+} */

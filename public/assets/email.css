@@ -1,0 +1,5 @@
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-color-type: var(--bs-table-striped-color);
+    --bs-table-bg-type: hsl(182, 39%, 74%);
+}

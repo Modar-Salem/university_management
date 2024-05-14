@@ -1,0 +1,16 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Quiz extends Model
+{
+    use HasFactory;
+    protected $fillable = ['period', 'question_number', 'correct_question_mark', 'incorrect_question_mark', 'subject_id', 'year_id', 'section_id'];
+
+    public function subject() {
+        return $this->belongsTo(Subject::class);
+    }
+}

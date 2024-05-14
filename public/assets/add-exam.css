@@ -1,0 +1,39 @@
+.form-control {
+    display: block;
+    width: 60%;}
+
+    .color-bg {
+        background-color: hsla(0, 0%, 77%, 0.89) !important;
+        opacity: 1.0;}
+        .translate-middle {
+            transform: translate(52%,-34%)!important;
+        }
+
+        .color-b {
+            background-color: hsla(0, 0%, 77%, 0.89) !important;
+            opacity: 1.0;}
+            .translate-middle {
+                transform: translate(52%,-34%)!important;
+            }
+
+        .color-b :hover {
+            background-color: hsl(182.25deg 33.06% 52.55%) !important;
+            opacity: 1.0;}
+            .translate-middle {
+                transform: translate(52%,-34%)!important;
+            }
+    
+.color-bg-input{
+    background-color:hsl(0, 37%, 97%) !important;
+}
+.mt-4 {
+    margin-top: 27.5rem!important;
+}
+
+/* .btn-coloor{
+    background-color: hsl(182.25deg 33.06% 52.55%);
+} */
+.choosed{
+    background-color: hsl(182.25deg 33.06% 52.55%) !important;
+    color:white;
+}

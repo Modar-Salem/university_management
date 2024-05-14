@@ -1,0 +1,112 @@
+.noto-naskh-arabic-uniquifier {
+    font-family: "Noto Naskh Arabic", serif;
+    font-optical-sizing: auto;
+    font-weight:bold;
+    font-style: normal;
+    font-size:medium;
+  }
+.navbar .logo{
+    width: 160px;
+    position: absolute;
+    left: 50%;
+    bottom: -35px;
+    transform: translate(-50%, 0);
+    background: white;
+    border-radius: 50%;
+}
+.navbar .li-logo{
+    width: 150px;
+    position: relative;
+}
+.bg-topnav{
+    background: linear-gradient(39deg, rgba(188,95,166,1) 0%, rgba(126,105,164,1) 100%);
+}
+.navbar{
+    padding: 0 !important;
+}
+.nav-link{
+    color: #5a6fa4;
+    transition: all .2s;
+}
+.nav-link:hover{
+    background-color: #5a6fa4 !important;
+    color: white;
+}
+.dropdown:hover .dropdown-menu{
+    display: flex !important;
+    flex-direction: column;
+    margin-top: 0; /* remove the gap so it doesn't close */
+}
+.dropdown-menu{
+    background-color: #ded0cf;
+    border-radius: 0 !important;
+}
+.dropdown-menu a:hover{
+    background-color: #c4bad5;
+}
+.bg-primary, .btn-primary{
+    background-color: #5a6fa4 !important;
+    color: white;
+}
+.form-control{
+    box-shadow: none !important;
+}
+body:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .3;
+    z-index: -1;
+    background-image: url(images/back.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+  }
+
+.pin-color{
+    color:#5a6fa4;
+  }
+.delet-color{
+    color:red
+}
+.m-center {
+    margin-top: 5rem!important;
+}
+.bg-colorin{
+    background-color: hsl(188.57deg 20% 93.14%);
+}
+.btn-color{
+    background-color: hsl(182.25deg 33.06% 52.55%) !important;
+    color:white !important;
+}
+.btn-co{
+
+    background-color: white !important;
+    color:black !important;
+}
+
+.bg-gp{
+    box-shadow: 0px 0px 8px #b8b8b8;
+    background: rgb(193,193,193);
+    background: linear-gradient(164deg, rgba(193,193,193,1) 0%, rgba(255,255,255,1) 34%);
+    position: relative;
+}
+
+.hat-image {
+    position: absolute;
+    top: -35px;
+    right: -55px;
+    width: 115px;
+    transform: rotate(45deg);
+    height: auto;
+}
+.dropdown-menu.custom{
+    left:0;
+    width: 350px;
+}
+.dropdown-menu.custom div{
+    cursor:pointer;
+}
