@@ -1,4 +1,4 @@
-re@extends('layout.master')
+@extends('layout.master')
 
 @section('title')
     Inbox Mail
@@ -53,7 +53,7 @@ re@extends('layout.master')
               </span>
                         </div>
                         <div class="col border rounded-3 color-bg-input  bg-input w-100">
-                            {{$mail->student->year->name}}
+                            {{$mail->sender->year->name}}
                         </div>
                     </div>
 

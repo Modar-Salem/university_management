@@ -47,7 +47,6 @@ class MailController extends Controller
     public function store(Request $request)
     {
 
-        // Retrieve logged-in lecturer
         $lecturer_id = Auth::guard('lecturer')->id();  // Assumes authentication
 
         StudentEmailInbox::create([
@@ -65,7 +64,7 @@ class MailController extends Controller
     public function show(string $id)
     {
         $mail = DoctorEmailInbox::find($id) ;
-        return view('lecturer.mail.show' , 'mail') ;
+        return view('lecturer.mail.show' , compact('mail')) ;
     }
 
     /**

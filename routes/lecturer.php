@@ -46,8 +46,7 @@ Route::controller(\App\Http\Controllers\lecturer\MailController::class)->prefix(
 
 Route::controller(\App\Http\Controllers\lecturer\ProjectController::class)->prefix('project')->middleware('auth:lecturer')->group(function () {
     Route::get('index' , 'index')->name('lecturer.project.index') ;
-    Route::get('create' , 'create')->name('lecturer.project.create') ;
-    Route::post('store' , 'store')->name('lecturer.project.store') ;
-    Route::get('show/{id}' , 'show')->name('lecturer.project.show') ;
+    Route::get('index_approved' , 'index_approved')->name('lecturer.project.index_approved') ;
+    Route::post('update/{project_id}' , 'update')->name('lecturer.project.update') ;
 });
 

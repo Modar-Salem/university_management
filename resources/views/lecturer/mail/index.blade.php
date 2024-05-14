@@ -38,7 +38,7 @@
                     <td colspan="1">
                         <a href="{{route('lecturer.mail.show' , $mail->id)}}" style="text-decoration-line: none;">
                             <h6 style="color: rgb(14, 13, 13);text-align: center; font-size: 18px;">
-                                {{$mail->sender()->name}}
+                                {{$mail->sender->name}}
                             </h6>
                         </a>
 

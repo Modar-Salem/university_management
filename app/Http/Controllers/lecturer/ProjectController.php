@@ -14,33 +14,22 @@ class ProjectController extends Controller
      */
     public function index()
     {
-            $projects = Project::where('doctor_id' , Auth::guard('lecturer'))->get() ;
-            return view('lecturer.project.index' ,compact('projects')) ;
+        $projects = Project::where('doctor_id' , Auth::guard('lecturer')->id())->where('type' , 'pending')->get() ;
+        return view('lecturer.project.index' ,compact('projects')) ;
     }
 
-
-    /**
-     * Display the specified resource.
-     */
-    public function show(string $id)
+    public function index_approved()
     {
-
-    }
-
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
+        $projects = Project::where('doctor_id' , Auth::guard('lecturer')->id())->where('type' , 'accepted')->get() ;
+        return view('lecturer.project.index_approved' ,compact('projects')) ;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $project_id)
     {
-        $project = Project::find($id) ;
+        $project = Project::find($project_id) ;
         $project->update([
             'type' => $request['type']
         ]) ;

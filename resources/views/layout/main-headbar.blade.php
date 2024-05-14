@@ -74,8 +74,8 @@
                                 مشاريع التخرج
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="/gb.html">الطلبات الواردة </a></li>
-                                <li><a class="dropdown-item" href="/accept_order.html">الطلبات المقبولة</a></li>
+                                <li><a class="dropdown-item" href="{{route('lecturer.project.index')}}">الطلبات الواردة </a></li>
+                                <li><a class="dropdown-item" href="{{route('lecturer.project.index_approved')}}">الطلبات المقبولة</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown" >
