@@ -8,13 +8,14 @@ use Illuminate\Database\Eloquent\Model;
 class Mark extends Model
 {
     use HasFactory;
-    protected $fillable = ['student_id', 'subject_id', 'mark'];
+    protected $fillable = [ 'subject_id', 'student_id', 'type', 'mark' , 'lab_mark'];
 
-    public function student() {
-        return $this->belongsTo(Student::class);
-    }
 
     public function subject() {
         return $this->belongsTo(Subject::class);
+    }
+
+    public function student() {
+        return $this->belongsTo(Student::class);
     }
 }

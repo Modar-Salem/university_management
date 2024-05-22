@@ -13,4 +13,16 @@ class Quiz extends Model
     public function subject() {
         return $this->belongsTo(Subject::class);
     }
+    public function year() {
+        return $this->belongsTo(Year::class);
+    }
+
+    public function section() {
+        return $this->belongsTo(Section::class);
+    }
+
+    public function questions()
+    {
+        return $this->hasMany(QuizQuestion::class , 'quiz_id') ;
+    }
 }

@@ -21,7 +21,7 @@
                         <!-- ... [Previous HTML Code] ... -->
 
                         <div class="p-40">
-                            <form action="{{ route('admin.register.save') }}" id="registerForm" method="post">
+                            <form action="{{ route('student.register.save') }}" id="registerForm" method="post">
                             @csrf  <!-- CSRF token for security -->
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -72,7 +72,7 @@
                                 </div>
                             </form>
                             <div class="text-center">
-                                <p class="mt-15 mb-0">Already have an account?<a href="{{route('admin.login')}}" class="text-danger ms-5"> Sign In </a></p>
+                                <p class="mt-15 mb-0">Already have an account?<a href="{{route('student.login')}}" class="text-danger ms-5"> Sign In </a></p>
                             </div>
                         </div>
                         <!-- ... [Rest of the HTML Code] ... -->

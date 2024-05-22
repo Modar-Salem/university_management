@@ -114,4 +114,17 @@ class AuthController extends Controller
 
         return redirect()->route('lecturer.login'); // Redirect to the login route after logging out
     }
+
+    public function profile(){
+        $lecturer = Auth::guard('lecturer')->user() ;
+        return view('lecturer.profile.profile' , compact('lecturer')) ;
+    }
+
+    public function updateProfile(Request $request){
+        $lecturer = Auth::guard('lecturer')->user() ;
+        $lecturer->update([
+            'name' => $request['name']
+        ]) ;
+        return redirect()->route('lecturer.profile') ;
+    }
 }

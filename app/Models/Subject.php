@@ -17,4 +17,18 @@ class Subject extends Model
     public function section() {
         return $this->belongsTo(Section::class);
     }
+
+    public function lectures()
+    {
+        return $this->hasMany(Lecture::class) ;
+    }
+
+    public function categories()
+    {
+        return $this->hasMany(Category::class) ;
+    }
+
+    public function lecturers() {
+        return $this->belongsToMany(Lecturer::class, 'subjects_lecturers');
+    }
 }

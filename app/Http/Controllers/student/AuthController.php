@@ -47,7 +47,7 @@ class AuthController extends Controller
             'password' => 'required' ,
         ])->validate();
 
-        if (!auth()->guard('lecturer')->attempt($data)) {
+        if (!auth()->guard('student')->attempt($data)) {
             throw ValidationException::withMessages([
                 'email' => trans('auth.failed')
             ]);
@@ -93,8 +93,8 @@ class AuthController extends Controller
             'name' => $data['firstname'] . ' ' . $data['lastname'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-            'year_id' => $data['year_id'] ,
-            'section_id' => $data['section_id'] ,
+            'year_id' => 1 ,
+            'section_id' => 1 ,
         ]);
 
         return redirect()->route('student.login');

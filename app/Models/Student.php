@@ -32,4 +32,9 @@ class Student extends Authenticatable
         return $this->hasMany(DoctorEmailInbox::class, 'sender_id');
     }
 
+    public function categories()
+    {
+        return $this->belongsToMany(Category::class , 'students_categories') ;
+    }
+
 }

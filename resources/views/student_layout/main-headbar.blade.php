@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-6">
                     <img src="{{\Illuminate\Support\Facades\URL::asset('assets/images/person.jpg')}}" class="rounded-circle" width="50" alt="" />
-                    <a href="{{route('lecturer.dashboard')}}"><span class="text-white fw-bold">مرحباً {{\Illuminate\Support\Facades\Auth::guard('lecturer')->user()->name}}</span></a>
+                    <a href="{{route('student.dashboard')}}"><span class="text-white fw-bold">مرحباً {{\Illuminate\Support\Facades\Auth::guard('student')->user()->name}}</span></a>
 
                 </div>
                 <div class="col-6 d-flex align-items-center justify-content-end">

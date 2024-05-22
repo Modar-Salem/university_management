@@ -1,7 +1,7 @@
 @extends('layout.master')
 
 @section('title')
-    Lecturer Dasboard
+    Lecturer Dashboard
 @endsection
 
 @section('css')

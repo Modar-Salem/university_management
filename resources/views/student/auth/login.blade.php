@@ -3,7 +3,7 @@
 <head>
 
     @section('title')
-        Admin Dashboard
+        Student Dashboard
     @endsection
 
 </head>
@@ -18,11 +18,11 @@
                 <div class="col-lg-5 col-md-5 col-12">
                     <div class="bg-white rounded10 shadow-lg">
                         <div class="content-top-agile p-20 pb-0">
-                            <h2 class="text-primary">Admin Dashboard</h2>
+                            <h2 class="text-primary">Student Dashboard</h2>
                             <p class="mb-0">Sign in to continue to Wasfati.</p>
                         </div>
                         <div class="p-40">
-                            <form action="{{ route('admin.login.action') }}" method="post" >
+                            <form action="{{ route('student.login.action') }}" method="post" >
                                 @csrf
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
@@ -60,7 +60,7 @@
                                 </div>
                             </form>
                             <div class="text-center">
-                                <p class="mt-15 mb-0">Don't have an account? <a href="{{route('admin.register')}}" class="text-warning ms-5">Sign Up</a></p>
+                                <p class="mt-15 mb-0">Don't have an account? <a href="{{route('student.register')}}" class="text-warning ms-5">Sign Up</a></p>
                             </div>
                         </div>
                     </div>
